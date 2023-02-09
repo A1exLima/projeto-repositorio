@@ -199,6 +199,7 @@ body {
 
 .cube {
   width: 40%;
+  margin-top: 15rem;
   /*margin: auto;*/
   display: flex;
   justify-content: center;
@@ -316,6 +317,42 @@ body {
   }
   .button-contato {
     max-width: 24rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .title {
+    font-size: 2.6rem;
+    font-size: clamp(2.6rem, 1rem + 2.05vw, 3.1rem);
+    line-height: 4rem;
+  }
+  :root {
+    --cube-img: 4.5rem;
+    --cube-width: 12.2rem;
+    --cube-height: 12.2rem;
+    --cube-translateZ-face: 6rem;
+  }
+
+  .cube {
+    width: 20%;
+    margin-top: 15rem;
+  }
+
+  .container-index main {
+    width: 75%;
+  }
+
+   .cod2 p:nth-child(3) {
+    font-size: 1.25rem;
+  }
+
+  .button-contato {
+    max-width: 22rem;
+  }
+
+  .menu {
+    position: fixed;
+    width: 11rem;
   }
 }
 
