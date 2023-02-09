@@ -158,7 +158,7 @@ body {
   font-weight: 400;
   letter-spacing: 0.2rem;
   font-size: clamp(1rem, 1rem + 5vw, 1.6rem);
-  color: rgba(255, 255, 255, 0.95);
+  color: rgba(208, 208, 208, 0.8);
 }
 .cod2 p:nth-child(4) {
   padding-left: 5rem;
@@ -342,7 +342,7 @@ body {
     width: 75%;
   }
 
-   .cod2 p:nth-child(3) {
+  .cod2 p:nth-child(3) {
     font-size: 1.25rem;
   }
 
@@ -353,6 +353,77 @@ body {
   .menu {
     position: fixed;
     width: 11rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-index {
+    flex-direction: column;
+    border: 1px solid red;
+  }
+
+  .cod,
+  .cod2,
+  .cod3 {
+    font-size: 2.4rem;
+  }
+
+  .cod p:nth-child(1) {
+    padding-bottom: 2.6rem;
+  }
+
+  .cod p:nth-child(2) {
+    padding-left: 3rem;
+    padding-bottom: 2.6rem;
+  }
+
+  .cod p:nth-child(3) {
+    padding-left: 5.2rem;
+    padding-bottom: 1rem;
+  }
+
+  .title {
+    padding-left: 5.2rem;
+    font-size: 4rem;
+    width: 55.8rem;
+    letter-spacing: 0.2rem;
+    line-height: 5.5rem;
+  }
+
+  .cod2 p:nth-child(1) {
+    padding-top: 1rem;
+    padding-left: 5.2rem;
+    padding-bottom: 2rem;
+  }
+
+  .cod2 p:nth-child(2) {
+    padding-left: 5.2rem;
+    padding-bottom: 1rem;
+  }
+
+  .cod2 p:nth-child(3) {
+    padding-left: 5.2rem;
+    padding-bottom: 0.7rem;
+    font-size: 1.25rem;
+  }
+
+  .cod3 p:nth-child(1) {
+    padding-top: 2.5rem;
+    padding-left: 3rem;
+    padding-bottom: 2.6rem;
+  }
+  
+  .cube {
+    position: absolute;
+    top: 40rem;
+    left: 50rem;
+  }
+
+  :root {
+    --cube-img: 5rem;
+    --cube-width: 13.2rem;
+    --cube-height: 13.2rem;
+    --cube-translateZ-face: 6.5rem;
   }
 }
 
