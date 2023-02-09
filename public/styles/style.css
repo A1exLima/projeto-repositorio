@@ -7,6 +7,10 @@
 
 :root {
   font-size: 62.5%; /*10px*/
+  --cube-img: 7.5rem;
+  --cube-width: 20.2rem;
+  --cube-height: 20.2rem;
+  --cube-translateZ-face: 10rem;
 }
 
 body {
@@ -203,12 +207,12 @@ body {
 }
 
 .img-cube {
-  width: 7.5rem;
+  width: var(--cube-img);
 }
 
 .animation-cube {
-  width: 20rem;
-  height: 20rem;
+  width: var(--cube-width);
+  height: var(--cube-height);
   animation: rotate 10s infinite alternate;
   transform-style: preserve-3d;
 }
@@ -222,33 +226,33 @@ body {
   justify-content: center;
   font-weight: bold;
   color: #234e52;
-  width: 20.2rem;
-  height: 20.2rem;
+  width: var(--cube-width);
+  height: var(--cube-height);
   position: absolute;
 }
 
 .face--front {
-  transform: translateZ(10rem);
+  transform: translateZ(var(--cube-translateZ-face));
 }
 
 .face--right {
-  transform: rotateY(90deg) translateZ(10rem);
+  transform: rotateY(90deg) translateZ(var(--cube-translateZ-face));
 }
 
 .face--back {
-  transform: rotateY(180deg) translateZ(10rem);
+  transform: rotateY(180deg) translateZ(var(--cube-translateZ-face));
 }
 
 .face--left {
-  transform: rotateY(-90deg) translateZ(10rem);
+  transform: rotateY(-90deg) translateZ(var(--cube-translateZ-face));
 }
 
 .face--top {
-  transform: rotateX(90deg) translateZ(10rem);
+  transform: rotateX(90deg) translateZ(var(--cube-translateZ-face));
 }
 
 .face--bottom {
-  transform: rotateX(-90deg) translateZ(10rem);
+  transform: rotateX(-90deg) translateZ(var(--cube-translateZ-face));
 }
 
 @keyframes rotate {
@@ -267,7 +271,7 @@ body {
 
 .scrolldown {
   position: absolute;
-  top: 82.5vh;
+  top: 81.5vh;
   left: 96vw;
   display: flex;
   flex-direction: column;
@@ -293,6 +297,25 @@ body {
 
   100% {
     transform: translateY(-1.5rem);
+  }
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --cube-img: 7rem;
+    --cube-width: 15.2rem;
+    --cube-height: 15.2rem;
+    --cube-translateZ-face: 7.55rem;
+  }
+  .title {
+    font-size: clamp(3.2rem, 1rem + 2.15vw, 5rem);
+    line-height: 5rem;
+  }
+  .cod2 p:nth-child(3) {
+    font-size: clamp(1rem, 1rem + 5vw, 1.45rem);
+  }
+  .button-contato {
+    max-width: 24rem;
   }
 }
 
