@@ -323,7 +323,7 @@ body {
 @media (max-width: 1023px) {
   .title {
     font-size: 2.6rem;
-    font-size: clamp(2.6rem, 1rem + 2.05vw, 3.1rem);
+    font-size: clamp(2.6rem, 1rem + 2.05vw, 4.1rem);
     line-height: 4rem;
   }
   :root {
@@ -359,7 +359,6 @@ body {
 @media (max-width: 768px) {
   .container-index {
     flex-direction: column;
-    border: 1px solid red;
   }
 
   .cod,
@@ -412,7 +411,7 @@ body {
     padding-left: 3rem;
     padding-bottom: 2.6rem;
   }
-  
+
   .cube {
     position: absolute;
     top: 40rem;
@@ -424,6 +423,18 @@ body {
     --cube-width: 13.2rem;
     --cube-height: 13.2rem;
     --cube-translateZ-face: 6.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 3.5rem;
+  }
+  .cube {
+    display: none;
+  }
+  .scrolldown {
+    display: none;
   }
 }
 
