@@ -257,6 +257,9 @@ body {
   .button-contato {
     max-width: 26.5rem;
   }
+  .social-media {
+    flex-direction: column;
+  }
 }
 /*.....................................*/
 
