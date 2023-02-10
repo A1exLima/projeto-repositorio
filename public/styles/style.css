@@ -7,11 +7,8 @@
 
 :root {
   font-size: 62.5%; /*10px*/
-  --cube-img: 3.5rem;
-  --cube-width: 7rem;
-  --cube-height: 7rem;
-  --cube-translateZ-face: 3.4rem;
   --fc-title: 8.5rem;
+  --lh-title: 9rem;
 }
 
 body {
@@ -38,7 +35,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 
 .container-menu {
   height: 100%;
@@ -72,7 +68,7 @@ body {
 }
 
 .menu nav li a:hover {
-  color: #00ffd9e4;
+  color: #08fdd8e4;
 }
 
 .social-media {
@@ -129,22 +125,20 @@ body {
   padding-left: 5rem;
   color: #d0d0d0;
   font-size: var(--fc-title);
-  font-family: 'Noto Sans Khmer', sans-serif;
+  font-family: "Noto Sans Khmer", sans-serif;
   font-weight: 600;
   letter-spacing: 0rem;
-  line-height: 9rem;
+  line-height: var(--lh-title);
   animation-name: downTop;
   animation-duration: 2.5s;
-
 }
 
-@keyframes downTop{
-
-  0%{
+@keyframes downTop {
+  0% {
     opacity: 0;
     transform: translateY(-2rem);
   }
-  100%{
+  100% {
     opacity: 1;
     transform: translateY(0rem);
   }
@@ -243,14 +237,28 @@ body {
     transform: translateY(-1.5rem);
   }
 }
+
+@media (max-width: 1200px) {
+  :root {
+    --fc-title: 7.5rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --fc-title: 5.15rem;
+    --lh-title: 7rem;
+  }
+
+  .cod2 p:nth-child(3) {
+    font-size: 1.7rem;
+  }
+
+  .button-contato {
+    max-width: 26.5rem;
+  }
+}
 /*.....................................*/
-
-
-
-
-
-
-
 
 /*...............CONTATO...............*/
 .container-contato {
