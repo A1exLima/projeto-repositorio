@@ -11,7 +11,7 @@
   --cube-width: 7rem;
   --cube-height: 7rem;
   --cube-translateZ-face: 3.4rem;
-  --fc-title: 7.5rem;
+  --fc-title: 8.5rem;
 }
 
 body {
@@ -32,83 +32,13 @@ body {
 }
 
 .logo {
-  height: 20rem;
+  height: 15rem;
   background: rgba(8, 253, 216, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.cube {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  perspective: 50rem;
-}
-
-.img-cube {
-  width: var(--cube-img);
-}
-
-.animation-cube {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: rotate 10s infinite alternate;
-  transform-style: preserve-3d;
-}
-
-.face {
-  background-color: #1ee8ca0d;
-  border: 0.25rem solid #1ee8ca;
-  border-radius: 0.85rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  color: #234e52;
-  width: var(--cube-width);
-  height: var(--cube-height);
-  position: absolute;
-}
-
-.face--front {
-  transform: translateZ(var(--cube-translateZ-face));
-}
-
-.face--right {
-  transform: rotateY(90deg) translateZ(var(--cube-translateZ-face));
-}
-
-.face--back {
-  transform: rotateY(180deg) translateZ(var(--cube-translateZ-face));
-}
-
-.face--left {
-  transform: rotateY(-90deg) translateZ(var(--cube-translateZ-face));
-}
-
-.face--top {
-  transform: rotateX(90deg) translateZ(var(--cube-translateZ-face));
-}
-
-.face--bottom {
-  transform: rotateX(-90deg) translateZ(var(--cube-translateZ-face));
-}
-
-@keyframes rotate {
-  from {
-    transform: rotateX(-80deg) rotateY(-10deg);
-  }
-
-  50% {
-    transform: rotateX(20deg) rotateY(320deg);
-  }
-
-  to {
-    transform: rotateX(-60deg) rotateY(-20deg);
-  }
-}
 
 .container-menu {
   height: 100%;
@@ -138,11 +68,11 @@ body {
   font-size: 1.6rem;
   color: #d0d0d0;
   transition-property: color;
-  transition-duration: 900ms;
+  transition-duration: 550ms;
 }
 
 .menu nav li a:hover {
-  color: #08fdd8e4;
+  color: #00ffd9e4;
 }
 
 .social-media {
@@ -167,7 +97,7 @@ body {
   width: 100%;
   height: 100vh;
   display: flex;
-  padding: 4rem 1rem 4rem 4rem;
+  padding: 4rem 1rem 6rem 4rem;
 }
 
 .container-index main {
@@ -199,20 +129,34 @@ body {
   padding-left: 5rem;
   color: #d0d0d0;
   font-size: var(--fc-title);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Noto Sans Khmer', sans-serif;
   font-weight: 600;
-  letter-spacing: 0.35rem;
-  text-transform: uppercase;
-  line-height: 9.5rem;
+  letter-spacing: 0rem;
+  line-height: 9rem;
+  animation-name: downTop;
+  animation-duration: 2.5s;
+
+}
+
+@keyframes downTop{
+
+  0%{
+    opacity: 0;
+    transform: translateY(-2rem);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0rem);
+  }
 }
 
 .transColor {
   cursor: pointer;
-  transition: all 100ms;
+  transition: all 250ms;
 }
 
 .transColor:hover {
-  color: #08fdd8;
+  color: #00ffd9;
 }
 
 .cod2 p:nth-child(1) {
