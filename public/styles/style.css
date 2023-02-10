@@ -215,7 +215,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .scrolldown-name {
