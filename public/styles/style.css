@@ -399,16 +399,23 @@ body {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 400px) {
   :root {
-    --fc-title: 2rem;
-    --lh-title: 3rem;
+    --fc-title: 2.6rem;
+    --lh-title: 3.5rem;
   }
 
   .cod,
   .cod2,
   .cod3 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 360px) {
+  :root {
+    --fc-title: 2.4rem;
+    --lh-title: 3rem;
   }
 }
 
