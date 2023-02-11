@@ -255,7 +255,7 @@ body {
 
 @media (max-width: 1023px) {
   :root {
-    --fc-title: 5.15rem;
+    --fc-title: 5rem;
     --lh-title: 7rem;
   }
 
@@ -396,6 +396,19 @@ body {
   .button-contato p a {
     font-size: 1.2rem;
     height: 4rem;
+  }
+}
+
+@media (max-width: 425px) {
+  :root {
+    --fc-title: 2rem;
+    --lh-title: 3rem;
+  }
+
+  .cod,
+  .cod2,
+  .cod3 {
+    font-size: 2rem;
   }
 }
 
