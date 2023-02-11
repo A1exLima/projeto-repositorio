@@ -381,7 +381,7 @@ body {
 
 @media (max-width: 480px) {
   :root {
-    --fc-title: 3.2rem;
+    --fc-title: 3rem;
     --lh-title: 4rem;
   }
 
