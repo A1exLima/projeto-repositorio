@@ -272,6 +272,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  :root {
+    --fc-title: 5.15rem;
+    --lh-title: 7rem;
+  }
   .menu,
   .scrolldown {
     display: none;
@@ -295,10 +299,7 @@ body {
 
   .icon-menu {
     display: block;
-    /*
-    background-color: #181818;
-    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
-    */
+    background-color: #1d1d1d;
     height: 9rem;
     width: 100vw;
     padding: 2rem 2.5rem;
@@ -310,7 +311,7 @@ body {
   .icon-menu img {
     width: 5.5rem;
   }
-  
+
   .menu-phone {
     width: 5rem;
     height: 5.5rem;
@@ -320,7 +321,84 @@ body {
     align-items: center;
     justify-content: center;
   }
+
+  .cod p:nth-child(1) {
+    padding-bottom: 4.5rem;
+  }
+
+  .cod p:nth-child(2) {
+    padding-left: 2rem;
+    padding-bottom: 4rem;
+  }
+
+  .cod p:nth-child(3) {
+    padding-left: 5rem;
+    padding-bottom: 1rem;
+  }
+
+  .cod2 p:nth-child(1) {
+    padding-left: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .cod2 p:nth-child(2) {
+    padding-left: 5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .cod2 p:nth-child(3) {
+    font-size: 1.4rem;
+  }
+
+  .cod2 p:nth-child(4) {
+    padding-left: 5rem;
+    padding-bottom: 4rem;
+  }
+
+  .cod3 p:nth-child(1) {
+    padding-top: 4rem;
+    padding-left: 3rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .button-contato {
+    max-width: 23.5rem;
+  }
+
+  .button-contato p a {
+    font-size: 1.4rem;
+    height: 4.5rem;
+  }
 }
+
+@media (max-width: 625px) {
+  :root {
+    --fc-title: 3.5rem;
+    --lh-title: 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --fc-title: 3.2rem;
+    --lh-title: 4rem;
+  }
+
+  .cod2 p:nth-child(3) {
+    font-size: 1.2rem;
+  }
+
+  .button-contato {
+    max-width: 21.5rem;
+  }
+
+  .button-contato p a {
+    font-size: 1.2rem;
+    height: 4rem;
+  }
+}
+
 /*.....................................*/
 
 /*...............CONTATO...............*/
