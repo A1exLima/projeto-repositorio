@@ -417,6 +417,12 @@ body {
     --fc-title: 2.4rem;
     --lh-title: 3rem;
   }
+
+  .cod,
+  .cod2,
+  .cod3 {
+    font-size: 1.6rem;
+  }
 }
 
 /*.....................................*/
