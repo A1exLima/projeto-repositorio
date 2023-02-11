@@ -8,7 +8,7 @@
 :root {
   font-size: 62.5%; /*10px*/
   --fc-title: 8.5rem;
-  --lh-title: 9rem;
+  --lh-title: 8.5rem;
 }
 
 body {
@@ -16,7 +16,10 @@ body {
   color: white;
   background-color: #1d1d1d;
   display: flex;
-  flex-direction: row;
+}
+
+.icon-menu {
+  display: none;
 }
 
 .menu {
@@ -26,6 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   background: #181818;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
 }
 
 .logo {
@@ -34,6 +38,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0px 1px 4px rgba(8, 253, 216, 0.05);
+}
+
+.logo img {
+  width: 8rem;
 }
 
 .container-menu {
@@ -123,7 +132,7 @@ body {
 }
 .title {
   padding-left: 5rem;
-  color: #d0d0d0;
+  color: rgb(242, 242, 242);
   font-size: var(--fc-title);
   font-family: "Noto Sans Khmer", sans-serif;
   font-weight: 600;
@@ -259,6 +268,53 @@ body {
   }
   .social-media {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu,
+  .scrolldown {
+    display: none;
+  }
+
+  .container-main {
+    margin: auto;
+  }
+
+  .container-index {
+    padding: 3rem;
+  }
+
+  .container-index main {
+    width: 100%;
+  }
+
+  body {
+    flex-direction: column;
+  }
+
+  .icon-menu {
+    display: block;
+    background-color: #181818;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    height: 9rem;
+    padding: 2rem 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .icon-menu img {
+    width: 5.5rem;
+  }
+  
+  .menu-phone {
+    width: 5rem;
+    height: 5.5rem;
+    background-color: #121212dd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 /*.....................................*/
